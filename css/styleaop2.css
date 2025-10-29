@@ -1,0 +1,29 @@
+.vitrine {
+  height: 80px;
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  padding-right: 70px;
+}
+body {
+  background-color: #970405;
+}
+.vitrine ul {
+  list-style: none; 
+  padding: 0;       
+  margin: 0;        
+  display: flex;
+  gap: 70px;
+  font-weight: 500;
+}
+.vitrine a {
+  
+  font-size: 30px;
+  color: #970405;
+  font-family: sans-serif;
+  text-decoration: none; 
+}
