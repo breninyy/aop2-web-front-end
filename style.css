@@ -78,8 +78,27 @@ body {
 .bege {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 100%;
   top: 40%;
   background-color: var(--secundary-color);
   z-index: 1;
+}
+
+.introducao-container h1{
+  position: relative;
+  z-index: 2;
+  font-family: var(--decorative-font);
+  color: var(--terciary-color);
+  text-align: center;
+  font-size: 96px;
+}
+.introducao-container p{
+  position: relative;
+  z-index: 2;
+  font-family: var(--main-font);
+  color: var(--terciary-color);
+  text-align: center;
+  font-size: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
