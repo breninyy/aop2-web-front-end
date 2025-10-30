@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #6D0E0E;
+  --secundary-color: #fffcf3;
+  --terciary-color: #183216;
+
+  --main-font: 'Nunito', sans-serif;
+  --decorative-font: 'Imperial Script', cursive;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: var(--main-font);
+}
+
+.navbar-container {
+  height: 80px;
+  width: 81%;
+  background-color: var(--secundary-color);
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.navbar-links li a {
+  font-weight: medium;
+  color: var(--primary-color);
+  font-family: var(--main-font);
+  text-decoration: none;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.titulo {
+  font-size: 30px;
+  color: #970405;
+  font-family: var(--main-font);
+  font-weight: 900;
+}
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 2;
+  width: 85%;
+  height: 650px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+.bege {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 40%;
+  background-color: var(--secundary-color);
+  z-index: 1;
+}
