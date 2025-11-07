@@ -264,3 +264,46 @@ body {
   margin: 0 8px;
   color: var(--terciary-color);
 }
+.prato-principal {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 20px;
+}
+.sobremesas {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 20px;
+}
+.potica {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 20px;
+}
+.cards {
+  text-align: center;
+}
+.cards h3{
+  position:relative;
+  right: 10px;
+  width: 300px; 
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 25px 0;
+}
+
+.bg_home{
+  background-image: url('assets/contato-img.jpg');
+  padding: 50% 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
