@@ -19,41 +19,22 @@ body {
 }
 
 .navbar-container {
-  position: relative;
-  z-index: 2;
+  width: 100%;
   height: 80px;
-  width: 80%;
-  background-color: var(--primary-color);
-  margin: 50px auto;
-  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
-}
-
-.navbar-links {
-  position: relative;
-  z-index: 2;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.navbar-links li a {
-  position: relative;
-  z-index: 2;
-  font-weight: medium;
-  color: var(--secundary-color);
-  font-family: var(--main-font);
-  text-decoration: none;
+  padding: 0 200px;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  width: 50px;
-  height: auto;
+  width: 200px;
+  height: 50px;
+  object-fit: contain;
 }
 
 .logo-container {
@@ -61,41 +42,29 @@ body {
   align-items: center;
   gap: 0.6rem;
   flex-shrink: 0;
-
 }
 
-.titulo {
-  font-size: 30px;
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.navbar-links a {
   color: var(--secundary-color);
   font-family: var(--main-font);
-  font-weight: 900;
-}
-
-.hero-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+  text-decoration: none;
 }
 
 .hero-image {
-  position: relative;
-  z-index: 2;
-  width: 85%;
-  height: 650px;
+  width: 100%;
+  height: 440px;
   object-fit: cover;
   object-position: center;
-  border-radius: 20px;
-}
-
-.faixa-vermelha {
-  position: absolute;
-  width: 100%;
-  height: 60%;
-  top: 0%;
-  left: 0%;
-  background-color: var(--secundary-color);
-  z-index: 0;
+  margin-top: 2rem;
 }
 
 .introducao-container h1 {
@@ -104,49 +73,33 @@ body {
   font-weight: lighter;
   color: var(--terciary-color);
   text-align: center;
-  font-size: 96px;
+  font-size: 64px;
+}
+
+.linha {
+  border: none;
+  height: 1px;
+  background: var(--terciary-color);
+  width: 500px;
+  margin: 10px auto 50px;
 }
 
 .introducao-container p {
   font-family: var(--main-font);
   color: var(--terciary-color);
+  font-style: italic;
   text-align: center;
-  font-size: 40px;
-  max-width: 1087px;
-  margin: 25px auto;
+  font-size: 20px;
+  margin: 25px 307px;
 }
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
-  gap: 30px;
-  max-width: 900px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
   margin: 0 auto;
   margin-top: 70px;
-}
-
-.item-top-esq {
-  border-radius: 20px 0 0 0;
-}
-
-.item-mid {
-  grid-row: 1 / span 3;
-  grid-column: 2;
-}
-
-.item-top-dir {
-  border-radius: 0 20px 0 0;
-}
-
-.item-bot-dir {
-  border-radius: 0 0 20px 0;
-}
-
-.item-bot-esq {
-  border-radius: 0 0 0 20px;
-  grid-row: 2 / span 2;
-  grid-column: 1;
 }
 
 .galeria img {
@@ -155,28 +108,21 @@ body {
   object-fit: cover;
 }
 
-.classicos {
-  width: 80%;
-  padding: 12px 24px;
-  border-radius: 20px;
-  margin: 100px auto;
-  background-color: var(--secundary-color);
-
-}
 
 .classicos h2 {
-  font-family: var(--main-font);
-  color: var(--primary-color);
+  font-family: var(--decorative-font);
+  color: var(--terciary-color);
   text-align: center;
-  font-size: 40px;
+  font-size: 64px;
   font-weight: lighter;
 }
 
-.classicos-receita1 {
+.classicos-receita {
   background-color: var(--primary-color);
   border-radius: 20px;
   border-radius: 20px;
-  width: 80%;
+  width: 850px;
+  /* height: 300px; */
   margin: 60px auto;
   display: flex;
   justify-content: center;
@@ -184,56 +130,97 @@ body {
 }
 
 .classicos-imagem {
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 240px;
   object-fit: cover;
-  border-radius: 20px 0 0 20px;
-  margin-right: 20px;
+  border-radius: 20px;
+  margin: 38px 33px 34px;
 }
 
-.classicos-receita1-descricao h3 {
-  font-family: var(--main-font);
-  color: var(--secundary-color);
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.descricao {
+.classicos-receita-descricao h3 {
   font-family: var(--main-font);
   color: var(--terciary-color);
+  font-weight: 900;
+  text-transform: uppercase;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 33px auto;
 }
 
-.Tempo {
-  font-style: italic;
-  margin-bottom: 20px;
-  color: var(--quaternary-color);
+.classicos-receita-descricao p {
+  font-family: var(--main-font);
+  color: var(--terciary-color);
+  font-size: 16px;
+  margin: auto 66px 46px 0;
+  text-align: justify;
 }
+
+.infos {
+  display: flex;
+  justify-items: auto;
+  gap: 10px;
+}
+
 
 .botao-receita {
   background-color: var(--secundary-color);
   color: var(--primary-color);
   font-family: var(--main-font);
-  font-size: 24px;
-  padding: 10px 20px;
+  font-size: 16px;
+  padding: 10px 17px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  margin: 20px;
+  margin: 0 50px 25px;
+  text-transform: uppercase;
 }
 
-.encontre-receitas {
-  width: 80%;
-  padding: 12px 24px;
-  border-radius: 20px;
-  margin: 100px auto;
-  background-color: var(--secundary-color);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .encontre-receitas h2 {
-  font-family: var(--main-font);
-  color: var(--primary-color);
+  font-family: var(--decorative-font);
+  color: var(--terciary-color);
   text-align: center;
   font-size: 40px;
   font-weight: lighter;
@@ -264,6 +251,7 @@ body {
   margin: 0 8px;
   color: var(--terciary-color);
 }
+
 .prato-principal {
   width: 250px;
   height: 250px;
@@ -271,6 +259,7 @@ body {
   border-radius: 20px 20px 20px 20px;
   margin-right: 20px;
 }
+
 .sobremesas {
   width: 250px;
   height: 250px;
@@ -278,6 +267,7 @@ body {
   border-radius: 20px 20px 20px 20px;
   margin-right: 20px;
 }
+
 .potica {
   width: 250px;
   height: 250px;
@@ -285,13 +275,15 @@ body {
   border-radius: 20px 20px 20px 20px;
   margin-right: 20px;
 }
+
 .cards {
   text-align: center;
 }
-.cards h3{
-  position:relative;
+
+.cards h3 {
+  position: relative;
   right: 10px;
-  width: 300px; 
+  width: 300px;
   border-radius: 10px;
   overflow: hidden;
   background-color: var(--secundary-color);
@@ -300,7 +292,7 @@ body {
   padding: 25px 0;
 }
 
-.bg_home{
+.bg_home {
   background-image: url('assets/contato-img.jpg');
   padding: 50% 20px;
   background-size: cover;
