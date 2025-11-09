@@ -203,13 +203,41 @@
         </div>
     </div>
     <div class="bg_home">
+        <img src="assets/contato-img.jpg" alt="">
+    </div>
 
+    <div class="centralizado">
+
+        <div class="contato">
+            <h2>VAMOS CONVERSAR?</h2>
+            <span>Será um prazer receber uma mensagem sua!</span>
+            <form class="form-contato" action="#" method="post" novalidate>
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+                </div>
+
+                <div class="campo-msg">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </div>
     </div>
 
     <footer class="footer">
-        <span>Desenvolvido por Breno e Lara</span></span>
+        <span>Desenvolvido por Breno e Lara</span>
         <span>Projeto desenvolvido para fins acadêmicos</span>
         <span>Universidade Vila Velha</span>
+    </footer>
 </body>
 
 </html>
