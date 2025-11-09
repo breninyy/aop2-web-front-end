@@ -180,6 +180,8 @@ body {
   font-size: 14px;
 }
 
+
+
 .botao-receita {
   background-color: var(--secundary-color);
   color: var(--primary-color);
@@ -190,6 +192,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   margin: 0 25px;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -440,16 +443,14 @@ body {
   display: flex;
   margin: 80px auto;
   justify-content: center;
-  padding: 70px 0 10px;
+  padding: 70px 0;
   width: 947px;
-  min-height: 600px;
+  height: 590px;
+  overflow-y: auto;
 }
 
-.linha-meio {
-  width: 1px;
-  height: 80%;
-  background-color: #000;
-  align-self: center;
+.card-receita-completa::-webkit-scrollbar {
+  width: 0px;
 }
 
 .lista-ingredientes {
