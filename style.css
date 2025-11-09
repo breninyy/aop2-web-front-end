@@ -95,11 +95,11 @@ body {
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 180px; /* altura base das linhas; ajustável conforme necessidade */
   gap: 10px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 70px; 
 }
 
 .galeria img {
@@ -122,11 +122,10 @@ body {
   border-radius: 20px;
   border-radius: 20px;
   width: 850px;
-  /* height: 300px; */
   margin: 60px auto;
   display: flex;
   justify-content: center;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .classicos-imagem {
@@ -156,10 +155,19 @@ body {
 
 .infos {
   display: flex;
-  justify-items: auto;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 8px;
+  font-family: var(--main-font);
+  color: var(--quaternary-color);
+  font-size: 14px;
+}
 
 .botao-receita {
   background-color: var(--secundary-color);
@@ -170,71 +178,70 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  margin: 0 50px 25px;
+  margin: 0 25px;
   text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.faixa-vermelha {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 650px;
+  background-color: var(--secundary-color);
+  margin-top: -920px;
+  margin-bottom: 270px;
+}
 
 .encontre-receitas h2 {
   font-family: var(--decorative-font);
   color: var(--terciary-color);
   text-align: center;
-  font-size: 40px;
+  font-size: 64px;
   font-weight: lighter;
 }
 
-.cards {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-  flex-wrap: wrap;
-  gap: 30px;
+.encontre-receitas p {
+  font-family: var(--main-font);
+  color: var(--terciary-color);
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-style: italic;
+  font-weight: lighter;
 }
 
 
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+
+.cards button {
+  position: relative;
+  width: 320px;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  border: none;
+}
+
+
+
+
+.imagem-card {
+  width: 320px;
+  height: 380px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
 
 .footer {
   width: 100%;
@@ -252,45 +259,7 @@ body {
   color: var(--terciary-color);
 }
 
-.prato-principal {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 20px 20px 20px 20px;
-  margin-right: 20px;
-}
 
-.sobremesas {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 20px 20px 20px 20px;
-  margin-right: 20px;
-}
-
-.potica {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 20px 20px 20px 20px;
-  margin-right: 20px;
-}
-
-.cards {
-  text-align: center;
-}
-
-.cards h3 {
-  position: relative;
-  right: 10px;
-  width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: var(--secundary-color);
-  color: var(--primary-color);
-  text-align: center;
-  padding: 25px 0;
-}
 
 .bg_home {
   background-image: url('assets/contato-img.jpg');
@@ -298,4 +267,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.cards-vermelho {
+  display:flex;
+  flex-direction: column;
 }
