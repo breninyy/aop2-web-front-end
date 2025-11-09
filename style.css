@@ -440,9 +440,9 @@ body {
   display: flex;
   margin: 80px auto;
   justify-content: center;
-  padding: 70px;
+  padding: 70px 0 10px;
   width: 947px;
-  height: 600px;
+  min-height: 600px;
 }
 
 .linha-meio {
@@ -502,7 +502,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 140px auto;
+  margin: 100px auto;
   padding: 10px 30px;
   border: none;
   border-radius: 10px;
