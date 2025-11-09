@@ -94,19 +94,29 @@ body {
 }
 
 .galeria {
-  display: grid;
-grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: 180px; /* altura base das linhas; ajustável conforme necessidade */
+  display: flex;
   gap: 10px;
   margin: 0 auto;
-  margin-top: 70px; 
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.galeria div {
+  flex: 1;
+  max-height: 420px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .galeria img {
+  flex: 1 1 0;
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  display: block;
 }
+
 
 
 .classicos h2 {
@@ -270,6 +280,6 @@ grid-template-columns: repeat(8, 1fr);
 }
 
 .cards-vermelho {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
