@@ -595,19 +595,16 @@ body {
 
 .categorias-inteiras {
   width: 100%;
-  padding: 0 20px 0 20px;
   box-sizing: border-box;
 }
 
 .cards-categorias {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
   gap: 24px;
   flex-wrap: wrap;
-  max-width: 1200px;
-  padding: 0 20px;
-  margin-left: 100px;
+  max-width: 1000px;
+  margin-left: 150px;
 }
 
 .card-completo {
@@ -662,6 +659,8 @@ body {
   width: 280px;
   height: 220px;
   margin-top: -160px;
+  display: flex;
+  flex-direction: column;
 }
 
 .infos-receitas h2 {
@@ -671,6 +670,10 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   padding-left: 20px;
+  padding-right: 50px;
+  min-height: 32px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .infos-receitas p {
@@ -679,16 +682,24 @@ body {
   font-size: 12px;
   margin-top: 10px;
   padding-left: 20px;
-  max-width: 220px;
+  max-width: 245px;
 }
 
 .descricao-receita {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: 15px;
   padding-left: 20px;
   font-size: 12px;
   font-family: var(--main-font);
   color: var(--terciary-color);
   gap: 10px;
+}
+
+.descricao-receita-info img {
+  width: 20px;
+  height: 20px;
 }
 
 .sobremesas-categorias {
@@ -706,6 +717,29 @@ body {
   text-transform: uppercase;
 }
 
+
+.footer-categorias {
+  width: 100%;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 200px;
+  padding: 20px 0;
+  font-family: var(--main-font);
+}
+
+.footer-categorias span+span::before {
+  content: "•";
+  margin: 0 8px;
+  color: var(--primary-color);
+}
+
+
+@media (min-width: 1800px) {
+  .cards-categorias {
+    max-width: 1800px;
+  }
+}
 
 /*
 
