@@ -748,3 +748,9 @@ body {
     max-width: 1800px;
   }
 }
+.bg_home_contato {
+  position: relative;
+  z-index: -1;
+  height: 1100px;
+  overflow: hidden;
+}
