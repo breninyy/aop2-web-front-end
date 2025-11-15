@@ -8,7 +8,6 @@
   --secundary-color: #6D0E0E;
   --terciary-color: #183216;
   --quaternary-color: #a8a5a5;
-
   --main-font: 'Nunito', sans-serif;
   --decorative-font: 'Imperial Script', cursive;
 }
@@ -104,11 +103,9 @@ body {
 
 .galeria div {
   flex: 1;
-  max-height: 420px;
   display: flex;
   gap: 10px;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .galeria img {
@@ -244,7 +241,6 @@ body {
   border-radius: 0 0 20px 20px;
   overflow: hidden;
   background-color: var(--secundary-color);
-  color: var(--primary-color);
   text-align: center;
   height: 100px;
   border: none;
@@ -253,6 +249,11 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+}
+
+.cards-vermelho a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 
@@ -578,14 +579,14 @@ body {
   margin: auto 200px;
 }
 
-.pratos-principais-categorias {
+.principais-categorias {
   display: flex;
   justify-content: center;
   gap: 200px;
   margin: 100px 200px 0;
 }
 
-.pratos-principais-categorias a {
+.principais-categorias a {
   font-family: var(--main-font);
   text-decoration: none;
   color: var(--secundary-color);
@@ -636,6 +637,11 @@ body {
 .descricao-receita {
   display: flex;
   flex-direction: column;
+}
+
+.descricao-receita-info {
+  display: flex;
+  align-items: center;
 }
 
 .imagem-card {
@@ -705,26 +711,9 @@ body {
   gap: 10px;
 }
 
-.descricao-receita-info img {
-  width: 20px;
-  height: 20px;
+.descricao-receita img {
+  margin-right: 5px;
 }
-
-.sobremesas-categorias {
-  display: flex;
-  justify-content: center;
-  gap: 400px;
-  margin: 100px 200px 0;
-}
-
-.sobremesas-categorias a {
-  font-family: var(--main-font);
-  font-size: 25px;
-  text-decoration: none;
-  color: var(--secundary-color);
-  text-transform: uppercase;
-}
-
 
 .footer-categorias {
   width: 100%;
@@ -742,15 +731,15 @@ body {
   color: var(--primary-color);
 }
 
-
-@media (min-width: 1800px) {
-  .cards-categorias {
-    max-width: 1800px;
-  }
-}
 .bg_home_contato {
   position: relative;
   z-index: -1;
   height: 1100px;
   overflow: hidden;
+}
+
+@media (min-width: 1800px) {
+  .cards-categorias {
+    max-width: 1800px;
+  }
 }
