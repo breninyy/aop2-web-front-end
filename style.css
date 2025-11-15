@@ -791,6 +791,18 @@ html {
   transition-duration: .3s;
 }
 
+.classicos-receita:hover {
+  transition-duration: .3s;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cards-vermelho:hover {
+  transition-duration: .3s;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 @media (min-width: 1800px) {
   .cards-categorias {
     max-width: 1800px;
