@@ -8,6 +8,7 @@
   --secundary-color: #6D0E0E;
   --terciary-color: #183216;
   --quaternary-color: #a8a5a5;
+  --hover-color: #520D0D;
   --main-font: 'Nunito', sans-serif;
   --decorative-font: 'Imperial Script', cursive;
 }
@@ -658,6 +659,7 @@ body {
 }
 
 .imagem-card a {
+  text-transform: uppercase;
   position: absolute;
   top: 45%;
   left: 65%;
@@ -667,6 +669,8 @@ body {
   padding: 10px 12px;
   border-radius: 10px;
   text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .infos-receitas {
@@ -736,6 +740,55 @@ body {
   z-index: -1;
   height: 1100px;
   overflow: hidden;
+}
+
+
+.navbar-links a:hover {
+  color: var(--terciary-color);
+  font-weight: bolder;
+
+}
+
+.botao-receita:hover {
+  background-color: var(--hover-color);
+  transition-duration: .3s;
+}
+
+.cards-vermelho button:hover {
+  background-color: var(--hover-color);
+  transition-duration: .3s;
+}
+
+.btn-enviar:hover {
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  transition-duration: .3s;
+}
+
+.principais-categorias a:hover {
+  color: var(--terciary-color);
+  font-weight: bold
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.imagem-card a:hover {
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
+  transition-duration: .3s;
+}
+
+.card-completo:hover {
+  transition-duration: .3s;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.voltar-receitas:hover {
+  background-color: var(--hover-color);
+  transition-duration: .3s;
 }
 
 @media (min-width: 1800px) {
